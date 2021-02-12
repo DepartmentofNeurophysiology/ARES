@@ -106,8 +106,10 @@ As a general note, you can keep track of what the program is doing by checking M
 * FLAG_user_custom_FileName = asks the user for the name of the .tif stack, in case this needs to be saved.
 
 
-#	Contacts (as of May 2018)
+#	Contacts 
 
 Niccolo' Calcini, PhD – n.calcini@neurophysiology.nl
+
+Fleur Zeldenrust, PhD - f.zeldenrust@neurophysiology.nl
 
 Prof. Tansu Celikel - celikel@neurophysiology.nl
