@@ -53,9 +53,7 @@ As the user selects the data type, the program will ask to specify the .tif  / .
 
 | ![](https://github.com/DepartmentofNeurophysiology/ARES/blob/master/figures/ReadMe%20-%20ARES%20-%204.png) | 
 |:--:| 
-| *In the User Hand Drawn selection, the user is to free hand draw the ROI. 
-To include more than 1 non connected parts to the ROI selection, press Continue. 
-Once done, press Finish.* |
+| *In the User Hand Drawn selection, the user is to free hand draw the ROI. To include more than 1 non connected parts to the ROI selection, press Continue. Once done, press Finish.* |
 
 
 
