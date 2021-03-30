@@ -27,10 +27,17 @@ As the user selects the data type, the program will ask to specify the .tif  / .
     
     a)	First the program will try to cut "junk frames" that sometimes are before and after the actual recording (for example if the fluorescence was not activated): if no such frames exist, the first frame should be 1, and the last frame should correspond to the total number of frames.
     
+    ![Cutting out 'junk frames'](https://github.com/DepartmentofNeurophysiology/ARES/blob/master/figures/ReadMe%20-%20ARES%20-%201.png)
+    
     b)	Now the program will try tag and remove dark frames intervals (frames with no fluorescence) which are sometimes used to separate a trial from the following one. These frames are not dangerous for the analysis per-se, but they are useless to analyze and will make the analysis slower. The time average projection is computed, and a tag assigned to each frame depending on their position respect the the Threshold (black dotted line). If you do want to keep some frames to separate each trial, in the options, set "Keep # intertrials frames" to the requested number (10 by default). If you want to skip this part, set the threshold bar to the minimum.
+   
+   ![Tagging and removing dark frames](https://github.com/DepartmentofNeurophysiology/ARES/blob/master/figures/ReadMe%20-%20ARES%20-%202.png)
     
     c)	Finally, the program asks the user to identify possible luminance artifacts based on a threshold on the derivative of the signal. Once the thresholds are selected, the program displays an option to either Ignore, Delete, or Interpolate the frames identified in this way. These "artifacts" also include short groups of 1-2 isolated dark frames. The ARES signal is very sensible to novelty in the signal, and a sudden change in luminance (such as turning on and off the fluorescence) will create huge artifacts.  This is why we suggest to perform interpolation if these dark / artifact frames are present.If you want to skip this phase, simply click ok, a pop up window will appear, where you can press Ignore.
-
+    
+| ![](https://github.com/DepartmentofNeurophysiology/ARES/blob/master/figures/ReadMe%20-%20ARES%20-%203.png) | 
+|:--:| 
+| *Identifying artifacts* |
 
 4.	The program might need to save the pre-processed stack as multiple tif images at this point. In this case, it will ask the user for the folder where to save them, and the name to assign to the files (does not matter for the analysis, the default one can be used).
 5.	As a last step, the user should select an ROI.
@@ -39,10 +46,11 @@ As the user selects the data type, the program will ask to specify the .tif  / .
     
     b)	As a second step a pop-up window will appear asking to choose the ROI selection method, which can be automatical or hand drawn by the user. In the Automatical method, the user should input a threshold coefficient that goes from 1 to -1 (lower values will include more pixels). The automatically selected ROI will be shown, and the user will be able to decide if to adjust the threshold, or to procede.
 
-
-In the User Hand Drawn selection, the user is to free hand draw the ROI. 
+  ![In the User Hand Drawn selection, the user is to free hand draw the ROI. 
 To include more than 1 non connected parts to the ROI selection, press Continue. 
-Once done, press Finish.
+Once done, press Finish.](https://github.com/DepartmentofNeurophysiology/ARES/blob/master/figures/ReadMe%20-%20ARES%20-%204.png)
+
+
 
 
 6.	The program will then ask for the output file name 
