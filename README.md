@@ -1,5 +1,5 @@
 # ARES 
-A description what it is and a link to the preprint should be added here
+ARES is method for the analysis of raw calcium imaging recording to be used as an alternative to DF/F. Thanks to autoregressions it takes advantage of the time dimension to obtain an improved spatial resolution and signal sharpness.
 
 The data can be found here: https://doi.org/10.34973/c5vq-gs81
 
