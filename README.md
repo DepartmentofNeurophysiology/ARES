@@ -14,7 +14,7 @@ The toolbox was tested on windows 7, windows 10, and mac systems.
 ###	Required file formats.
 1.	A single .tif file containing all the recorded frames.
 2.	Multiple .tif files (one file per frame) in the same folder.
-3.	(Not recommended) A .avi or .mov file.
+3.	A .avi or .mov file (supported, not recommended) 
 
 
 ##	Analysis.
@@ -108,9 +108,7 @@ As a general note, you can keep track of what the program is doing by checking M
 * Save .avi = if selected, it will automatically save the ARES film output in a .avi file.
 * Normalize .tif = if selected, the program will normalize each frame by its average, before saving the .avi output.
 * Include static background = if selected, it will use the raw images projection as background for the .avi movie, and overlap the ARES on top of it.
-* Not selectable from the UI.
-* options.FLAG_show_EPhys = 1;
-* options.FLAG_plot_position
+* Some options, such as options.FLAG_show_EPhys and options.FLAG_plot_position, are not selectable from the User Interface (UI). To change them, modify the function "set_options.m"
 
 ### General Options (not selectable from the UI)
 * deactivate_warnings = temporarily deactivate warnings from MATLAB during the execution of the ARES computation (due to possible rank deficient matrices) and the loading of the RAW .tif images (there is a known warning from MATLAB thinking the .tif images files are damaged, as of 2016b).
